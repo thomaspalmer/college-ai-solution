@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>App Name</title>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="./script.js"></script>
+    </head>
+
+    <body class="flex h-screen justify-center overflow-y-auto items-center bg-gray-50">
+        <div class="w-full max-w-screen-lg space-y-4">
+            <p class="text-gray-500 text-center">
+                Enter two film titles below to receive some fun information about them.
+            </p>
+
+            <div class="bg-white shadow rounded-md">
+                <form class="px-4 py-5 sm:px-6" id="form">
+                    <div id="response"></div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label class="font-medium text-gray-600 text-sm">Input 1</label>
+                            <input
+                                type="text"
+                                id="input_1"
+                                class="w-full border border-gray-300 rounded-md px-4 py-2 mt-1"
+                            />
+                        </div>
+
+                        <div>
+                            <label class="font-medium text-gray-600 text-sm">Input 2</label>
+                            <input
+                                type="text"
+                                id="input_2"
+                                class="w-full border border-gray-300 rounded-md px-4 py-2 mt-1"
+                            />
+                        </div>
+                    </div>
+        
+                    <div class="flex justify-end">
+                        <button 
+                            id="button" 
+                            class="px-4 py-2 bg-indigo-500 transform transition duration-200 hover:scale-105 text-white rounded-md disabled:opacity-50 disabled:cursor-not-allowed"
+                        >
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
