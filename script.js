@@ -1,4 +1,4 @@
-const key = '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';
+const key = 'KEY_GO_HERE';
 const apiUrl = 'https://api.openai.com/v1/chat/completions';
 
 window.addEventListener('load', () => {
